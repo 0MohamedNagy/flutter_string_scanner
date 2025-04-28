@@ -1,18 +1,24 @@
-Flutter String Scanner
-A tool to scan Flutter projects for untranslated static strings, helping developers improve multi-language support by identifying strings that should be replaced with standard localization methods.
-Installation
-Add this to your pubspec.yaml:
-dependencies:
-flutter_string_scanner: ^1.0.0
+# Flutter String Scanner
 
-Or install it as a dev dependency for CLI usage:
+A tool to scan Flutter projects for untranslated static strings, helping developers improve multi-language support by identifying strings that should be replaced with standard localization methods.
+
+## Installation
+
+Add this to your `pubspec.yaml`:
+
+```yaml
 dev_dependencies:
-flutter_string_scanner: ^1.0.0
+  flutter_string_scanner: ^1.0.1
+
+Or install it globally for CLI usage:
+dart pub global activate flutter_string_scanner
 
 Usage
 Run the scanner from the command line:
-dart pub global activate flutter_string_scanner
 flutter_string_scanner --path /path/to/flutter/project
+
+Or, if added as a dependency:
+dart run flutter_string_scanner: --path /path/to/flutter/project
 
 Options
 
@@ -33,4 +39,4 @@ Ideal for preparing Flutter apps for multi-language support.
 Contributing
 Contributions are welcome! Please open an issue or submit a pull request on GitHub.
 License
-MIT License
+MIT License```
